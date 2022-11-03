@@ -1,0 +1,12 @@
+.btn-section__header {
+  font-size: 16px;
+  color: var(--dark-grayish-cyan);
+}
+
+.btn-container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: min-content min-content min-content;
+  grid-gap: 16px;
+}

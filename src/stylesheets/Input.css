@@ -1,0 +1,36 @@
+.input-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input-span {
+  font-size: 16px;
+  color: var(--dark-grayish-cyan);
+}
+
+.input {
+  height: 48px;
+  width: 100%;
+  border: 0;
+  padding: 0 19px;
+  text-align: right;
+  font-size: 1.5rem;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  border-radius: 5px;
+  color: var(--very-dark-cyan);
+  background-color: var(--very-light-grayish-cyan);
+}
+
+.input-logo {
+  position: absolute;
+  top: 44px;
+  left: 19px;
+  font-size: 32px;
+  font-weight: lighter;
+  color: var(--light-grayish-cyan);
+}

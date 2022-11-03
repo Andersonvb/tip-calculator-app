@@ -1,0 +1,11 @@
+.percentage-input {
+  width: 147px;
+  height: 48px;
+  border: 0;
+  border: 10px;
+  font-family: "Space Mono";
+  font-size: 24px;
+  text-align: center;
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--dark-grayish-cyan);
+}
