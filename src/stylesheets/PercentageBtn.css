@@ -18,3 +18,11 @@
   color: var(--dark-grayish-cyan);
   background-color: var(--very-light-grayish-cyan);
 }
+
+@media screen and (min-width: 1024px) {
+
+  .btn {
+    width: 116px;
+  }
+
+}

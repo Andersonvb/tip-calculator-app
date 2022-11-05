@@ -10,3 +10,16 @@
   grid-template-rows: min-content min-content min-content;
   grid-gap: 16px;
 }
+
+@media screen and (min-width: 1024px) {
+
+  .btn-section {
+    width: 100%;
+  }
+
+  .btn-container {
+    grid-template-columns: min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content;
+  }
+
+}

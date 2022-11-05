@@ -8,9 +8,11 @@ function App() {
     <main className="main-container">
       <h1 className="header">SPLITTER</h1>
       <div className="container">
-        <Input title="Bill" icon="dollar" placeholder="" />
-        <BtnSection />
-        <Input title="Number of people" icon="people" placeholder="0" />
+        <div className="container__input-section">
+          <Input title="Bill" icon="dollar" placeholder="0" />
+          <BtnSection />
+          <Input title="Number of people" icon="people" placeholder="0" />
+        </div>
         <TotalSection />
       </div>
     </main>

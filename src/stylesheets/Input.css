@@ -34,3 +34,11 @@
   font-weight: lighter;
   color: var(--light-grayish-cyan);
 }
+
+@media screen and (min-width: 1024px) {
+
+  .input-container {
+    width: 100%;
+  }
+
+}
