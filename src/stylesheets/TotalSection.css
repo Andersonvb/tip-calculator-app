@@ -4,7 +4,6 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 26px;
-  min-width: 385px;
   height: 257px;
   border-radius: 10px;
   background-color: var(--very-dark-cyan);
@@ -37,7 +36,6 @@
   justify-content: flex-end;
   grid-column: 2;
   grid-row: 1 / 3;
-  font-size: 38px;
   color: var(--strong-cyan);
 }
 
@@ -61,8 +59,12 @@
 
 @media screen and (min-width: 1024px) {
   .total-container {
-    width: 50%;
+    min-width: 385px;
     height: 100%;
+  }
+
+  .info-container__span-3 {
+    font-size: 38px;
   }
 
   .total-container__btn {
