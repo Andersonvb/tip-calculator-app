@@ -36,6 +36,12 @@
     height: 100vh;
   }
 
+  .header {
+    margin-bottom: 82px;
+    font-size: 19px;
+    width: 9ch;
+  }
+
   .container {
     padding: 30px 50px;
     width: 920px;

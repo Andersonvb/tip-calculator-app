@@ -34,9 +34,10 @@
 .info-container__span-3 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   grid-column: 2;
   grid-row: 1 / 3;
+  font-size: 38px;
   color: var(--strong-cyan);
 }
 

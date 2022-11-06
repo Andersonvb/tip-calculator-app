@@ -30,7 +30,7 @@ function App() {
   const afterReset = () => {
     setInterval(() => {
       setReset(false);
-    }, 500);
+    }, 10);
   };
 
   useEffect(() => {
@@ -58,14 +58,9 @@ function App() {
       setTotalValues([amountValue.toFixed(2), totalValue.toFixed(2)]);
     } else if (reset) {
       setPercentage([]);
-      setTotalValues([0, 0]);
+      setTotalValues([0.0, 0.0]);
     }
   }, [bill, people, percentage]);
-
-  useEffect(() => {
-    console.log("Reset: ", bill, people, percentage, totalValues);
-    console.log("ResetValue: ", reset);
-  }, [totalValues]);
 
   return (
     <main className="main-container">
