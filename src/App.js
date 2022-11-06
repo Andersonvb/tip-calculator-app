@@ -25,13 +25,15 @@ function App() {
 
   const resetData = () => {
     setReset(true);
-    setPercentage([]);
-    setTotalValues([0.0, 0.0]);
+  };
+
+  const afterReset = () => {
+    setInterval(() => {
+      setReset(false);
+    }, 500);
   };
 
   useEffect(() => {
-    console.log("Reset: ", bill, people, percentage, totalValues);
-
     let amountValue;
     let totalValue;
     let billValue;
@@ -54,8 +56,16 @@ function App() {
 
     if (!isNaN(amountValue)) {
       setTotalValues([amountValue.toFixed(2), totalValue.toFixed(2)]);
+    } else if (reset) {
+      setPercentage([]);
+      setTotalValues([0, 0]);
     }
   }, [bill, people, percentage]);
+
+  useEffect(() => {
+    console.log("Reset: ", bill, people, percentage, totalValues);
+    console.log("ResetValue: ", reset);
+  }, [totalValues]);
 
   return (
     <main className="main-container">
@@ -68,14 +78,16 @@ function App() {
             placeholder="0"
             childToParentFunc={billChildToParent}
             reset={reset}
+            afterReset={afterReset}
           />
-          <BtnSection childToParent={btnChildToParent} />
+          <BtnSection childToParent={btnChildToParent} reset={reset} />
           <Input
             title="Number of people"
             icon="people"
             placeholder="0"
             childToParentFunc={peopleChildToParent}
             reset={reset}
+            afterReset={afterReset}
           />
         </div>
         <TotalSection

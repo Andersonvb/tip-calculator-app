@@ -3,7 +3,7 @@ import Btn from "../components/PercentageBtn.js";
 import Input from "../components/PercentageInput.js";
 import "../stylesheets/BtnSection.css";
 
-const BtnSection = ({ childToParent }) => {
+const BtnSection = ({ childToParent, reset }) => {
   const [btnSelected, setBtnSelected] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [valueSelectedArray, setValueSelectedArray] = useState([
@@ -42,6 +42,12 @@ const BtnSection = ({ childToParent }) => {
   useEffect(() => {
     childToParent(valueSelectedArray);
   }, [valueSelectedArray, childToParent]);
+
+  useEffect(() => {
+    if (reset) {
+      setValueSelectedArray([]);
+    }
+  }, [reset]);
 
   return (
     <article className="btn-section">

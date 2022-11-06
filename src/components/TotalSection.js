@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../stylesheets/TotalSection.css";
 
 const TotalSection = ({ amount, total, resetFunc }) => {
