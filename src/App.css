@@ -32,7 +32,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .main-container {
     height: 100vh;
   }
@@ -50,5 +49,4 @@
     align-items: flex-start;
     gap: 20px;
   }
-
 }

@@ -19,7 +19,7 @@
   padding: 0 19px;
   text-align: right;
   font-size: 1.5rem;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-weight: 700;
   border-radius: 5px;
   color: var(--very-dark-cyan);
@@ -36,9 +36,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-
   .input-container {
     width: 100%;
   }
-
 }
